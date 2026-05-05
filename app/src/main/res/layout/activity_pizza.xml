@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <Button
+            android:id="@+id/btnAtras"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Atrás" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTIÓN DE PIZZAS"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos de la pizza"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/txtPizID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="ID"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txtPizName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nombre pizza" />
+
+        <EditText
+            android:id="@+id/txtPizOrigin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="País origen" />
+
+        <Switch
+            android:id="@+id/swPizEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activo"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCrear"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Crear"
+                android:onClick="cmdCrear_onClick" />
+
+            <Button
+                android:id="@+id/btnLeer"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Leer"
+                android:onClick="cmdLeer_onClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Actualizar"
+                android:onClick="cmdActualizar_onClick" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Eliminar"
+                android:onClick="cmdEliminar_onClick" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar ingredientes"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spIngredientes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/btnAgregarIngrediente"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Agregar ingrediente"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado / Detalle"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp"
+            android:background="#F5F5F5"
+            android:padding="10dp"
+            android:text="Aquí se mostrará el resultado..."
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:typeface="monospace"
+            android:lineSpacingExtra="3dp" />
+    </LinearLayout>
+
+</ScrollView>
